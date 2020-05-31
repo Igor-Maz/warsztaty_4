@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>BookApp</title>
+
+<body>
+<div class="main-div">
+    <div class="content-list">
+        <div class="top-bar">
+            <div><h1>BookApp</h1></div>
+            <div>
+                <form action="post">
+                    <table class="main-table">
+                        <thead>
+
+                        <tr>
+                            <th>ID</th>
+                            <th>Tytuł</th>
+                            <th>ISBN</th>
+                            <th>Gatunek</th>
+                            <th>Author</th>
+                            <th>Publisher</th>
+                        </tr>
+                        </thead>
+
+                        <tbody>
+                        <tr>
+                            <th>Automatycznie</th>
+                            <td>
+                                <input type="text" id="title">
+                            </td>
+                            <td>
+                                <input type="text" id="isbn">
+                            </td>
+                            <td>
+                                <input type="number" id="genre">
+                            </td>
+                            <td>
+                                <input type="text" id="author">
+                            </td>
+                            <td>
+                                <input type="text" id="publisher">
+                            </td>
+
+                        </tr>
+                        </tbody>
+                    </table>
+                    <button id="add-book">Dodaj</button>
+                </form>
+            </div>
+            <!--            <div><button class="starter">Lista książek</button></div>-->
+            <div><h3>Lista książek</h3></div>
+        </div>
+
+
+        <div class="bookList"></div>
+
+    </div>
+</div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/app1.js"></script>
+</html>
